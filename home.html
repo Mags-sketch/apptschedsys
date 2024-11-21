@@ -4,91 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Appointment Scheduling System!</title>
-
+    <title>Appointment Scheduling System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
+        /* General Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background: (135deg, darkgreen);
             color: #333;
             text-align: center;
         }
 
         header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px 0;
+            background: #276630; /* Gradient for header */
+            color: #276630;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .header-image {
+            width: 100%; /* Makes the image span the full width of the header */
+            height: 250px; /* Increased height for more prominence */
+            object-fit: fill;
+            opacity: 1.0;
         }
 
         .container {
-            width: 80%;
-            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+            margin: 30px auto;
         }
 
         .ad-content {
             background-color: #ffffff;
-            padding: 40px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
+            padding: 40px 30px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            border-radius: 15px;
             margin-bottom: 20px;
+            text-align: center;
         }
 
         h1 {
             color: #333;
-            font-size: 32px;
-        }
-
-        h2 {
-            color: #333;
-            font-size: 24px;
+            font-size: 36px;
+            margin-bottom: 10px;
         }
 
         p {
             color: #555;
             font-size: 18px;
             margin-top: 10px;
+            line-height: 1.6;
         }
 
         .cta-button {
             margin-top: 20px;
-            padding: 12px 25px;
-            background-color: #FF5733;
+            padding: 12px 30px;
+            background-color: #276630;
             color: white;
-            font-size: 16px;
+            font-size: 18px;
+            font-weight: bold;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: transform 0.2s, background-color 0.3s;
         }
 
         .cta-button:hover {
-            background-color: #FF4511;
-        }
-
-        .app-store-buttons {
-            margin-top: 30px;
-        }
-
-        .app-store-buttons img {
-            width: 180px;
-            margin: 10px;
+            background-color: #ffe714;
+            color: black;
+            transform: scale(1.05);
         }
 
         footer {
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             background-color: #333;
             color: white;
+            font-size: 14px;
         }
 
-        /* Image Styling */
-        .app-image {
-            max-width: 100%;
-            height: auto;
-            margin-top: 20px;
-            border-radius: 10px;
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -96,26 +102,21 @@
 <body>
 
     <header>
-        <img src="https://media.licdn.com/dms/image/v2/D563DAQHwWx1_rv_Spg/image-scale_191_1128/image-scale_191_1128/0/1691417548890/colegio_de_montalban_official_cover?e=2147483647&v=beta&t=hou3DoO-kKYedM8yRhdjJEm7wYzLtpu3nWzKcdwQxmQ" alt="School Logo" class="app-image">
-    </header>
+        <img src="https://media.licdn.com/dms/image/v2/D563DAQHwWx1_rv_Spg/image-scale_191_1128/image-scale_191_1128/0/1691417548890/colegio_de_montalban_official_cover?e=2147483647&v=beta&t=hou3DoO-kKYedM8yRhdjJEm7wYzLtpu3nWzKcdwQxmQ" alt="School Logo" class="header-image">
+    
 
-    <!-- Image Section -->
     <div class="container">
         <div class="ad-content">
-            <!-- Placeholder image for app download promotion -->
             <h1>Avoid Hassles and Delays!</h1>
-        <p>Plan your school consultations, manage appointments, and never miss a session again.</p>
-        <p>Start Scheduling Now!</p>
-
-            <!-- App Store buttons -->
-            <button class="cta-button" onclick="window.location.href= ">Download the app</button>
-            
+            <p>Plan your school consultations, manage appointments, and never miss a session again.</p>
+            <p>Start Scheduling Now!</p>
+            <button class="cta-button" onclick="window.location.href='your_app_link_here'">Download the app</button>
+        </header>
         </div>
     </div>
 
     <footer>
-        <p>&copy;</p>
-      
+        <p>&copy; Colegio de Montalban Consultation System</p>
     </footer>
 
 </body>
